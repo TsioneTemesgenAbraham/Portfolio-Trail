@@ -4,10 +4,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>
-          Hi, <br>I'm Tsione, </br>
-          <br>Web developer </br>
-        </h1>
+        <h1>Hi,</h1>
+        <h2>I'm Tsione, </h2>
+        <h2>Web developer</h2>
         <p>Full-Stack Developer/ Front End Developer/ Back End Developer </p>
       </header>
     </div>
