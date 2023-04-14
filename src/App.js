@@ -1,14 +1,12 @@
 import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hi,</h1>
-        <h2>I'm Tsione, </h2>
-        <h2>Web developer</h2>
-        <p>Full-Stack Developer/ Front End Developer/ Back End Developer </p>
-      </header>
+      <header className="App-header"></header>
+
+      <Home />
     </div>
   );
 }
