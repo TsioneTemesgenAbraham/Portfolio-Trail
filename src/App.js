@@ -3,14 +3,14 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import "./App.css";
 import Contact from "./pages/Contact";
-import NotFound from "./NotFound";
+import NotFound from "./pages/NotFound";
 
 const App = () => (
   <Router>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="*" component={NotFound} />
+      <Route path="*" component={<NotFound />} />
     </Routes>
   </Router>
 );
