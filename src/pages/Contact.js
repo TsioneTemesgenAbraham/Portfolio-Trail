@@ -8,9 +8,9 @@ export default function Contact() {
       <p>Phone Number: 07402662152</p>
       <p>
         Email:{" "}
-        <a href="tsionetemesgenabraham@gmail.com">
+        {/* <a href="tsionetemesgenabraham@gmail.com">
           tsionetemesgenabraham@gmail.com
-        </a>{" "}
+        </a>{" "} */}
       </p>
     </div>
   );
