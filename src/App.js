@@ -1,12 +1,16 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import "./App.css";
+import Contact from "./pages/Contact";
 
-function App() {
-  <Routes>
-    <Route path="/" element={<Home />} />
-  </Routes>;
-}
+const App = () => (
+  <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
