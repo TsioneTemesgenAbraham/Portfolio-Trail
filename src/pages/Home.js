@@ -1,18 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import Portfolio from "./Portfolio";
-import HamburgerMenu from "./HamburgerMenu";
+import Navbar from "./Navbar";
 
 const Home = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <nav className="navbar" showMenu={showMenu} setShowMenu={setShowMenu}>
-          <HamburgerMenu />
-        </nav>
-      </header>
-
+    <>
+      <Navbar />
       <div>
         <h1>
           <span>Hi,</span>
@@ -25,7 +18,7 @@ const Home = () => {
         <button>Contact me!</button>
       </div>
       <Portfolio />
-    </div>
+    </>
   );
 };
 
