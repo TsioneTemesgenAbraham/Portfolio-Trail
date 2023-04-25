@@ -1,7 +1,7 @@
-const Portofilio = () => {
+const Portfolio = () => {
   return (
     <div>
-      <h1>My Portofilio</h1>
+      <h1>My Portfolio</h1>
       <p>
         Hello and welcome to my web development portfolio! My name is Tsione
         Abraham, and I'm a junior web developer. I specialize in creating
@@ -13,4 +13,4 @@ const Portofilio = () => {
   );
 };
 
-export default Portofilio;
+export default Portfolio;
