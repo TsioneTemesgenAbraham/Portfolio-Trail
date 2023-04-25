@@ -1,21 +1,12 @@
-import "./App.css";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Portofilio from "./pages/Portofilio";
-import HamburgerMenu from "./pages/HamburgerMenu";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="Ap">
-      <header className="App-headr">
-        <nav className="navbar">
-          <HamburgerMenu />
-        </nav>
-      </header>
-
-      <Home />
-      <Portofilio />
-    </div>
-  );
+  <Routes>
+    <Route path="/" element={<Home />} />
+  </Routes>;
 }
 
 export default App;
