@@ -2,21 +2,39 @@ import React, { useState } from "react";
 import "./css/HamburgerMenu.css";
 
 const HamburgerMenu = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <>
-      <div class={`nav-links ${showMenu ? "show" : ""}`}>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/skills">Skills</a>
-        <a href="/contact">Contact</a>
+    <nav className="nav">
+      <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/skills">Skills</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+      </ul>
+      <div
+        className={`hamburger ${menuOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
+        <div className="line-group">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
       </div>
-      <div className="hamburger-menu" onClick={() => setShowMenu(!showMenu)}>
-        <div className="hamburger-menu__line"></div>
-        <div className="hamburger-menu__line"></div>
-        <div className="hamburger-menu__line"></div>
-      </div>
-    </>
+    </nav>
   );
 };
 
